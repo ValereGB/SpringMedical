@@ -3,6 +3,7 @@ package com.example.medical.controllers;
 
 import com.example.medical.models.Adresse;
 import com.example.medical.models.Deplacement;
+import com.example.medical.services.DeplacementService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

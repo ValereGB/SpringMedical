@@ -39,7 +39,7 @@ public class Patient {
     @Column(name = "sexe" ,length = 3)
     private SexeStatut status;
 
-    @Column(name = "numeroSecuriteSocial")
-    private Long numeroSecuriteSocial;
+    @Column(name = "numeroSecuriteSociale")
+    private Long numeroSecuriteSociale;
 }
 

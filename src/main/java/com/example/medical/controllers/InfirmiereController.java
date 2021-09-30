@@ -1,6 +1,7 @@
 package com.example.medical.controllers;
 
 import com.example.medical.models.Infirmiere;
+import com.example.medical.services.InfirmiereService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

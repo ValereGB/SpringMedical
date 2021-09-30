@@ -20,8 +20,8 @@ public class Adresse {
     @Column(name = "rue",columnDefinition = "varchar(45)")
     private String rue;
 
-    @Column(name = "cp")
-    private int cp;
+    @Column(name = "cp",columnDefinition = "varchar(10)")
+    private String cp;
 
     @Column(name = "ville",columnDefinition = "varchar(45)")
     private String ville;
