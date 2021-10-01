@@ -1,8 +1,6 @@
 package com.example.medical.services;
 
-import com.example.medical.models.Infirmiere;
 import com.example.medical.models.Patient;
-import com.example.medical.repositories.InfirmiereRepository;
 import com.example.medical.repositories.PatientRepository;
 
 import java.util.List;
@@ -41,4 +39,7 @@ public class PatientServiceImpl implements PatientService {
         this.patientRepository.deleteById(id);
 
     }
+
+    @Override
+    public List<Patient> findDeplacementPatient() { return this.patientRepository.findDeplacementPatient(); }
 }

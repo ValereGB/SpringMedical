@@ -15,4 +15,6 @@ public interface InfirmiereService {
     Optional<Infirmiere> findById(Long id);
 
     void deleteById(Long id);
+
+    List<Infirmiere> findDeplacementInfirmiere();
 }

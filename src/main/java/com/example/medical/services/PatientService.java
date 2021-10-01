@@ -15,4 +15,6 @@ public interface PatientService {
     Optional<Patient> findById(Long id);
 
     void deleteById(Long id);
+
+    List<Patient> findDeplacementPatient();
 }

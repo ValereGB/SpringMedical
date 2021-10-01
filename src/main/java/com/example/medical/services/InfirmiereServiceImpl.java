@@ -37,6 +37,10 @@ public class InfirmiereServiceImpl implements  InfirmiereService{
     }
 
     @Override
+    public List<Infirmiere> findDeplacementInfirmiere() { return this.infirmiereRepository.findDeplacementInfirmiere(); }
+
+
+    @Override
     public void deleteById(Long id) {
         this.infirmiereRepository.deleteById(id);
 

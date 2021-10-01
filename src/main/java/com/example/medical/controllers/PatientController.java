@@ -2,6 +2,7 @@ package com.example.medical.controllers;
 
 
 import com.example.medical.models.Deplacement;
+import com.example.medical.models.Infirmiere;
 import com.example.medical.models.Patient;
 import com.example.medical.services.PatientService;
 import org.springframework.web.bind.annotation.*;
@@ -33,6 +34,12 @@ public class PatientController {
     @PutMapping("")
     public Patient putPatient(@RequestBody Patient patient) {
         return patientService.putPatient(patient);
+    }
+
+
+    @GetMapping("depla")
+    public List<Patient> findDeplacementPatient() {
+        return patientService.findDeplacementPatient();
     }
 
     @GetMapping("{id}")

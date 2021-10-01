@@ -28,6 +28,12 @@ public class InfirmiereController {
         return infirmiereService.save(infirmiere);
     }
 
+    @GetMapping("depla")
+    public List<Infirmiere> findDeplacementInfirmiere() {
+        return infirmiereService.findDeplacementInfirmiere();
+    }
+
+
     @PutMapping("")
     public Infirmiere putInfirmiere(@RequestBody Infirmiere infirmiere) {
         return infirmiereService.putInfirmiere(infirmiere);
